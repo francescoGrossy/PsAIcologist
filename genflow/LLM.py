@@ -3,7 +3,7 @@ from openai import OpenAI
 
 class LLMAgent:
     def __init__(self, prompt, model="gpt-3.5-turbo", temperature=0.7):
-        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        self.client = OpenAI("...insert your OPENAI KEY...")
         self.model = model
         self.temperature = temperature
         self.system_prompt = prompt 

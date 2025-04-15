@@ -6,11 +6,11 @@ class LLMAgent:
         self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
         self.model = model
         self.temperature = temperature
-        self.system_prompt = prompt  # Questo è il ruolo iniziale dell'assistente (es. psicologo)
+        self.system_prompt = prompt 
 
     def run(self, chat_history):
         """
-        chat_history deve essere una lista di messaggi nel formato:
+        chat_history must be a list as the following:
         [{"role": "system", "content": "..."},
          {"role": "user", "content": "..."},
          {"role": "assistant", "content": "..."},
